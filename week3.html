@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device, initial=scale=1.0">
+<style>
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #f1f1f1;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Header/Blog Title */
+.header-txt{
+  padding: 30px;
+  text-align: center;
+  background: white;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: DarkSalmon;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.footer {
+  text-align: center;
+  padding: 3px;
+  background-color: DarkSalmon;
+  color: white;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+
+table th{
+		text-align: left;
+		background-color: #ffff99;
+		color: black;
+		padding: 4px 30px 4px 8px;
+	}
+
+table td{
+	font-weight: bold;
+	border: 1px solid black;
+	padding: 4px 8px;
+}
+
+</style>
+</head>
+<body>
+
+  <div class="container">
+    <img src="images/header7.jpeg" style="width:100%;">
+    <div class="centered">
+      <h1>Afini's Website</h1>
+    </div>
+  </div>
+
+  <div class="topnav">
+    <a href="index.html">HOME</a>
+    <a href="week4.html">WEEK 1 & 2</a>
+    <a href="week5.html">WEEK 3 & 4</a>
+    <a href="feedback.html" style="float:right">FEEDBACK</a>
+  </div>
+
+  <div>
+  <p>In week 3, we learned about how to make a table in web page.
+	Here's an example of my table that I did before.</p>
+	<p>HTML tables allow web authors to arrange data into rows and columns.</p>
+	<p> An HTML table is defined with the [table] tag.
+	Each table row is defined with the [tr] tag. A table header is defined with the [th] tag.
+	By default, table headings are bold and centered. A table data/cell is defined with the [td] tag. </p>
+	<p>The [td] elements are the data containers of the table.
+	They can contain all sorts of HTML elements; <br>
+	<ul> 
+		<li>text
+		<li>images
+		<li>lists
+		<li>other tables
+		<li>etc.
+	</ul></p>
+
+	<p>If you do not specify a border for the table, it will be displayed without borders. </p>
+	<p>By default, table headings are bold and centered.</p>
+	<p>Border spacing specifies the space between the cells.</p>
+	<p>
+
+	<table>
+		<tr>
+			<td>Tag</td>
+			<td>Description</td>
+		</tr>
+		<tr>
+			<td>table</td>
+			<td>Defines a table</td>
+		</tr>
+		<tr>
+			<td>th</td>
+			<td>Defines a header cell in a table</td>
+		</tr>
+		<tr>
+			<td>tr</td>
+			<td>Defines a row in a table</td>
+		</tr>
+		<tr>
+			<td>td</td>
+			<td>Defines a cell in a table</td>
+		</tr>
+		<tr>
+			<td>caption</td>
+			<td>Defines a table caption</td>
+		</tr>
+		<tr>
+			<td>colgroup</td>
+			<td>Specifies a group of one or more columns in a table for formatting</td>
+		</tr>
+		<tr>
+			<td>col</td>
+			<td>Specifies column properties for each column within a [colgroup] element</td>
+		</tr>
+		<tr>
+			<td>thead</td>
+			<td>Groups the header content in a table</td>
+		</tr>
+		<tr>
+			<td>tbody</td>
+			<td>Groups the body content in a table</td>
+		</tr>
+		<tr>
+			<td>tfoot</td>
+			<td>Groups the footer content in a table</td>
+		</tr>
+	</table>
+	</div>
+
+	<div class="footer">
+      <p>Thank you! Do visit my website again.</p>
+  	</div>
+
+</body>
+</html>

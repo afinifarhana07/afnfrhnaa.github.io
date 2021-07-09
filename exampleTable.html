@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device, initial=scale=1.0">
+<title> AFINI's WEBSITE </title>
+
+<style>
+
+* {
+box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #f1f1f1;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Header/Blog Title */
+.header-txt{
+  padding: 30px;
+  text-align: center;
+  background: white;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: DarkSalmon;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 3px;
+  background-color: DarkSalmon;
+  color: white;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+
+table th{
+	text-align: left;
+	background-color: #ffff99;
+	color: black;
+	padding: 4px 30px 4px 8px;
+}
+
+table td{
+	font-weight: bold;
+	border: 1px solid black;
+	padding: 4px 8px;
+}
+
+</style>
+
+</head>
+<body>
+
+	<div class="container">
+    	<img src="images/header7.jpeg" style="width:100%;">
+    	<div class="centered">
+      		<h1>Afini's Website</h1>
+    	</div>
+  	</div>
+
+  	<div class="topnav">
+    	<a href="index.html">HOME</a>
+    	<a href="home.html">MAIN MENU</a>
+    	<a href="week12.html">WEEK 1 & 2</a>
+    	<a href="week34.html">WEEK 3 & 4</a>
+    	<a href="week56.html">WEEK 5 & 6</a>
+    	<a href="week78.html">WEEK 7 & 8</a>
+    	<a href="feedback.html" style="float:right">FEEDBACK</a>
+  	</div>
+
+  	<div class="card">
+	<h1> Bookstore Pricelist </h1>
+
+	<table border="1" >
+		<tr>
+			<th> No </th>
+			<th> Picture </th>
+			<th> Name </th>
+			<th> Author </th>
+			<th> Price Per Book </th>
+			<th> Language </th>
+		</tr>
+		<tr>
+			<td> 1 </td>
+			<td> <img src="images/book1.jpeg" width="150" height="155" >
+			<td> The Sun and Her Flowers </td>
+			<td> Rupi Kaur </td>
+			<td> RM69.00 </td>
+			<td> English </td>
+		</tr>
+		<tr>
+			<td> 2 </td>
+			<td> <img src="images/book2.jpeg" width="150" height="175" >
+			<td> Note to Self </td>
+			<td> Connor Franta </td>
+			<td> RM40.00 </td>
+			<td> English </td>
+		</tr>
+		<tr>
+			<td> 3 </td>
+			<td> <img src="images/book3.jpeg" width="150" height="170" >
+			<td> Empayar </td>
+			<td> Teme Abdullah </td>
+			<td> RM42.00 </td>
+			<td> Malay </td>
+		</tr>
+		<tr>
+			<td> 4 </td>
+			<td> <img src="images/book4.jpeg" width="150" height="150" >
+			<td> Arkitek Jalanan </td>
+			<td> Teme Abdullah </td>
+			<td> RM39.00 </td>
+			<td> Malay </td>
+		</tr>
+		<tr>
+			<td> 5 </td>
+			<td> <img src="images/book5.jpeg" width="150" height="150" >
+			<td> All The Bright Places </td>
+			<td> Jennifer Niven </td>
+			<td> RM39.00 </td>
+			<td> English </td>
+		</tr>
+
+	</table>
+	<p> <a href="week34.html" target="_top">Go back to table pages.</a> </p>
+	</div>
+
+	<div class="footer">
+      <p>Thank you! Do visit my website again.</p>
+  	</div>
+
+</body>
+</html>

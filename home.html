@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device, initial=scale=1.0">
+  <title> AFINI's WEBSITE </title>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #f1f1f1;
+}
+
+.center-pic{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Header/Blog Title */
+.header-txt{
+  padding: 30px;
+  text-align: center;
+  background: white;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: DarkSalmon;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.footer {
+  text-align: center;
+  padding: 3px;
+  background-color: DarkSalmon;
+  color: white;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+  <div class="container">
+    <img src="images/header7.jpeg" style="width:100%;">
+    <div class="centered">
+      <h1>Afini's Website</h1>
+    </div>
+  </div>
+
+  <div class="topnav">
+    <a href="index.html">HOME</a>
+    <a href="home.html">MAIN MENU</a>
+    <a href="week12.html">WEEK 1 & 2</a>
+    <a href="week34.html">WEEK 3 & 4</a>
+    <a href="week56.html">WEEK 5 & 6</a>
+    <a href="week78.html">WEEK 7 & 8</a>
+    <a href="exampleTable.html">EXAMPLE TABLE</a>
+    <a href="feedback.html" style="float:right">FEEDBACK</a>
+  </div>
+
+  <div class="row">
+    <div class="leftcolumn">
+
+      <div class="card">
+        <h2>WELCOME TO MY WEB!</h2>
+        <h5>Individual Project, Dynamic Web Application Development.</h5>
+        <img src="images/work2.jpeg" style="width:50%;" class="center-pic">
+        <p>Hello there! <br>This website that I created is about my journey of learning Dynamic Web Application Development!</p>
+      </div>
+
+      <div class="card">
+        <h2>WHAT EXACTLY IS HTML?</h2>
+        <h5>About HTML;</h5>
+
+        <img src="images/htmlpic2.jpeg" style="width:30%;" class="center-pic">
+          <p>Let me explain to you a bit about HTML before we dive in more into the website.</p>
+          <p>HTML stands for Hyper Text Markup Language <br>
+          HTML is the standard markup language for Web pages <br>
+          HTML elements are the building blocks of HTML pages <br>
+          HTML elements are represented by <> tags
+          </p>
+          <p><h2>What is HTML?</h2>
+
+        <ul>
+          <li>HTML stands for Hyper Text Markup Language
+          <li>HTML describes the structure of a Web page
+          <li>HTML consists of a series of elements
+          <li>HTML elements tell the browser how to display the content
+          <li>HTML elements are represented by tags
+          <li>HTML tags label pieces of content such as "heading", "paragraph", "table", and so on
+          <li>Browsers do not display the HTML tags, but use them to render the content of the page
+        </ul>
+
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>RANDOM</h2>
+        <h5>Here's my favourite song;</h5>
+        <p>Click the play button. </p>
+        <audio controls>
+        <source src="song.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+        </audio>
+      </div>
+    </div>
+
+    <div class="rightcolumn">
+      <div class="card">
+        <h2>About Me</h2>
+
+          <img src="images/me.jpeg" style="width: 90%;">
+          <h3>Get to know me</h3>
+          <div>
+            Name: Nur Afini Farhana binti Suhaimi<br>
+            Age: 21 years old <br>
+            Birth date: 24 October 1999 <br>
+            Hobby: Reading books and listening to songs <br>
+            I am currently studying and i am pursuing my study in Bachelor Degree of Science Computer <br>
+            I am from group A4CS2304A <br>
+            <ul>
+              <li>Dynamic Web Application Development
+              <li>Software Engineering- Theories and Principles
+              <li>Enterprise Programming
+              <li>Principle of Compilers
+              <li>English for Professional Interaction
+              <li>Introductory Mandarin (Level II)
+            </ul>
+          </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+      <p>Thank you! Do visit my website again.</p>
+  </div>
+
+</body>
+</html>

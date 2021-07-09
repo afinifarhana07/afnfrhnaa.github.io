@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device, initial=scale=1.0">
+	<title> AFINI's WEBSITE </title>
+<style>
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #f1f1f1;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Header/Blog Title */
+.header-txt{
+  padding: 30px;
+  text-align: center;
+  background: white;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: DarkSalmon;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.footer {
+  text-align: center;
+  padding: 3px;
+  background-color: DarkSalmon;
+  color: white;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+
+table th{
+		text-align: left;
+		background-color: #ffff99;
+		color: black;
+		padding: 4px 30px 4px 8px;
+	}
+
+table td{
+	font-weight: bold;
+	border: 1px solid black;
+	padding: 4px 8px;
+}
+
+</style>
+</head>
+<body>
+
+  <div class="container">
+    <img src="images/header7.jpeg" style="width:100%;">
+    <div class="centered">
+      <h1>Afini's Website</h1>
+    </div>
+  </div>
+
+  <div class="topnav">
+    <a href="index.html">HOME</a>
+    <a href="home.html">MAIN MENU</a>
+    <a href="week12.html">WEEK 1 & 2</a>
+    <a href="week34.html">WEEK 3 & 4</a>
+    <a href="week56.html">WEEK 5 & 6</a>
+    <a href="week78.html">WEEK 7 & 8</a>
+    <a href="exampleTable.html">EXAMPLE TABLE</a>
+    <a href="feedback.html" style="float:right">FEEDBACK</a>
+  </div>
+
+
+  <div class="card">
+  	<h3>WEEK 1</h3>
+  	<p>In week 1, On Wednesday, 4 March 2020, We started the very first class for this subject CSC574. <br>  
+  		I am very excited to start and learn this subject because it is new and sounds very interesting <br> eventhough I know this subject might be challenging because this is our first time learning and trying to understand a whole new subject. </pr>
+
+  		<pr> Our lecturer, Madam Siti explained to us the course outline and taught us how to create a website using HTML. <br> For our class, we use Sublime Text Software to write html because it is easy. <br> This first class we learned about the basic of HTML. </p>
+	<ul>
+		<li>HTML Documents (eg: !DOCTYPE html)
+		<li>HTML Headings
+		<li>HTML Paragraphs
+		<li>HTML Buttons
+		<li>HTML tag
+		<li>HTML attributes
+		<li>HTML formating
+		<li>CSS 
+	</ul>
+  		<p><img src="images/week1.jpeg" style="width:25%;"> <img src="images/week1a.jpeg" style="width:25%;"></p>
+  </div>
+
+  <div class="card">
+  	<h3>LINKS</h3>
+  	<p>Madam also told us to refer to this website when we're learning about HTML.</p>
+  	<p> <a href="https://www.w3schools.com/html/" target="_top">HTML tutorial!</a> </p>
+  </div>
+
+
+	<div class="footer">
+      <p>Thank you! Do visit my website again.</p>
+  	</div>
+
+</body>
+</html>

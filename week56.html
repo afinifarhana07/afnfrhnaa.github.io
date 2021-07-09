@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device, initial=scale=1.0">
+	<title> AFINI's WEBSITE </title>
+<style>
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #f1f1f1;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Header/Blog Title */
+.header-txt{
+  padding: 30px;
+  text-align: center;
+  background: white;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: DarkSalmon;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.footer {
+  text-align: center;
+  padding: 3px;
+  background-color: DarkSalmon;
+  color: white;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+
+table th{
+		text-align: left;
+		background-color: #ffff99;
+		color: black;
+		padding: 4px 30px 4px 8px;
+	}
+
+table td{
+	font-weight: bold;
+	border: 1px solid black;
+	padding: 4px 8px;
+}
+
+</style>
+</head>
+<body>
+
+  <div class="container">
+    <img src="images/header7.jpeg" style="width:100%;">
+    <div class="centered">
+      <h1>Afini's Website</h1>
+    </div>
+  </div>
+
+  <div class="topnav">
+    <a href="index.html">HOME</a>
+    <a href="home.html">MAIN MENU</a>
+    <a href="week12.html">WEEK 1 & 2</a>
+    <a href="week34.html">WEEK 3 & 4</a>
+    <a href="week56.html">WEEK 5 & 6</a>
+    <a href="week78.html">WEEK 7 & 8</a>
+    <a href="exampleTable.html">EXAMPLE TABLE</a>
+    <a href="feedback.html" style="float:right">FEEDBACK</a>
+  </div>
+
+
+  <div class="card">
+  	<h3>WEEK 5</h3>
+    <p>In this week we learned about JAVASCRIPT.</p>
+    <p><ul>
+        <li>JavaScript is the Programming Language for the Web.
+        <li>JavaScript can update and change both HTML and CSS.
+        <li>JavaScript can calculate, manipulate and validate data.
+      </li>
+    </p>
+    <p>JavaScript can be written in a web page's HTML.</p>
+  </div>
+
+    <div class="card">
+      <h3>VIDEO</h3>
+      <p>This week we have started to learn online because the MCO is still on going until now <br> so Madam Siti has provided us videos to make it easier for us to learn. </p>
+      <p>The video is very helpful and I hope it is helpful for you too. Enjoy!</p>
+      <p>Here's a video given by my lecturer.</p>
+      <div style="text-align: center;">
+        <video width="320" height="240" controls>
+        <source src="video/java1.mp4" type="video/mp4">
+        </video>
+        <video width="320" height="240" controls>
+        <source src="video/java2.mp4" type="video/mp4">
+        </video>
+        <video width="320" height="240" controls>
+        <source src="video/java3.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div> 
+
+    <div class="card">
+      <h3>WEEK 6</h3>
+      <p><b>In this week we learn about the Conditions Statements</b></p>
+      <p>Very often when you write code, you want to perform different actions for different decisions. </p>
+      <p> You can use conditional statements in your code to do this. <br> In JavaScript we have the following conditional statements:</p>
+      <ul>
+        <li>Use if to specify a block of code to be executed, if a specified condition is true
+        <li>Use else to specify a block of code to be executed, if the same condition is false
+        <li>Use else if to specify a new condition to test, if the first condition is false
+        <li>Use switch to specify many alternative blocks of code to be executed
+      </ul>
+      <p>
+      <div style="text-align: center;">
+        <video width="320" height="240" controls>
+        <source src="video/java4.mp4" type="video/mp4">
+        </video>
+        <video width="320" height="240" controls>
+        <source src="video/java5.mp4" type="video/mp4">
+        </video>
+        <video width="320" height="240" controls>
+        <source src="video/java6.mp4" type="video/mp4">
+        </video>
+      </div></p>
+</body>
+</html>
